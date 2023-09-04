@@ -1,0 +1,483 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background: rgb(3, 3, 3);
+    overflow-x: hidden;
+}
+
+.menu{
+    height: 100vh;
+    width: 5%;
+    background:#000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.menu .logo{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    border-radius: 100%;
+}
+
+.menu .logo img{
+    width: 100%;
+    border-radius: 100%;
+}
+.menu .sidebar{
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 90%;
+  height: 70%;
+  background:#111111;
+ 
+  
+}
+
+.menu .sidebar ul{
+ list-style: none;
+  width: 100%;
+  height: 100%;
+}
+.menu .sidebar li a span{
+    display: none;
+}
+
+.menu .sidebar li{
+    width: 99%;
+    height: 20%;
+    padding-top:10%;
+    padding: 2%;
+    background:#353535;
+    
+}
+
+.menu .sidebar li a{
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    top: 30%;  
+    left: 0;
+    padding: 10px;
+    font-size: 20px;
+    
+}
+
+.menu .sidebar li:hover{
+    background:#DADADA;
+   
+}
+
+
+.menu .sidebar img{
+    width: 35px;
+    padding-right: 8%;
+    color: #fff;
+}
+
+.container_video{
+    width: 100vw;
+    height: 1000px;
+    position: absolute;
+    left: 5%;
+    top: 0%;
+    border-radius: 10px;
+    filter: contrast(120%);
+    z-index: -1;
+
+}
+
+.container_video video{
+ 
+    width: 100%;
+}
+
+.titulo .ti {
+    font-family: 'Bungee Spice', cursive;
+    color: rgb(233, 111, 11);
+    position: relative;
+    left: 4%;
+    top: 400px;
+    z-index: 200;
+    font-size: 40px;
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid #fff;
+    width: 35ch;
+    animation: escribir 2s steps(35), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+
+
+@keyframes escribir {
+ 
+    from {
+     width: 0;
+    }
+
+}
+
+@keyframes blink {
+   50% {
+    
+     border-color:transparent;
+     }
+}
+
+
+.container_pasos{
+    width: 30%;
+    height: 80%;
+    background: #181818;
+    box-shadow: 2px 2px 2px 2px  rgb(141, 5, 5);
+    position: relative;
+    top: 600px;
+    left: 100px;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    color: #fff;
+    z-index: 100;
+
+}
+
+.container_pasos .titulo_info1{
+    font-size: 25px;
+    padding-bottom:10px;
+    position: relative;
+    top: -20px;
+    left: 30px;
+}
+.container_pasos p{
+    padding: 2%;
+    font-size: 18px;
+}
+
+.container_pasos img{
+    width: 60%;
+    position: relative;
+    top: -50px;
+    left: 50px;
+    border-radius: 10px;
+}
+
+.paragraph_pri{
+    position: relative;
+    top: -10px;
+}
+
+
+
+.container_pasos .button_mas{
+    width: 150px;
+    height: 40px;
+    background: rgb(155, 7, 7);
+    cursor: pointer;
+    border-radius: 1em;
+    position: relative;
+    top: -10px;
+    left:200px;
+    color: #fff;
+    border: none;
+}
+
+.container_pasos .button_mas:hover{
+    transform: scale(1.1);
+    background: rgb(204, 20, 20);
+    transition: all ease 1.5s;
+}
+
+.Hidetext{
+    display:none;
+}
+
+
+.show{
+    display: block;
+    
+}
+
+.img_2{
+    width: 45%;
+    height: 55%;
+    position: absolute;
+    top: 98%;
+    left: 45%;
+    background: url(img/2.jpg);
+    border-radius: 10px;
+
+}
+
+
+ /* scroll*/
+
+ body::-webkit-scrollbar{
+
+	width: 10px;
+	
+	
+}
+
+body::-webkit-scrollbar-thumb{
+
+    background:transparent;
+	border-radius: 10px;
+	border: 1px solid #fff;
+}
+
+
+
+/* SECCIÓN PARA LOS PROGRAMAS DE OPTIMIZACIÓN*/
+.programas{
+    width:75%;
+    height: 2300px;
+    background: rgb(24, 24, 24);
+    box-shadow: 2px 2px 2px 2px #000;
+    position: absolute;
+    top: 1100px;
+    left: 150px;
+    border-radius:10px;
+ 
+}
+
+.programas .Software{
+    width: 45%;
+    height: 240px;
+    position: relative;
+    margin:2%;
+   float: left;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    
+}
+
+.programas .Software .img{
+    width: 100%;
+   border-radius: 10px;
+}
+
+.programas .Software .desc_softwares{
+  width: 100%;
+  height: 40%;
+  background: #1F1F20;
+  padding: 2%;
+  position: absolute;
+  top: 110%;
+  color: #fff;
+  border-radius: 10px;
+
+}
+
+.programas .Software .desc_softwares img{
+    width: 20%;
+    position: absolute;
+    top: -35%;
+  
+}
+
+
+.programas .Software .desc_softwares .Btn_descargar{
+    width: 150px;
+    height: 50px;
+    border: 1px solid #fff;
+    background: transparent;
+    cursor: pointer;
+    position:absolute;
+    top: 30%;
+    left: 60%;
+    border-radius: 1em;
+    color: #fff;
+    font-size: 18px;
+}
+
+.programas .Software .desc_softwares .Btn_descargar:hover{
+  color: #000;
+  background: #fff;
+
+}
+
+.programas .Software .desc_softwares .p_hover{
+  font-size: 15px;
+  color: #fff;
+  opacity: 0;
+  width: 90%;
+  display: none;
+
+}
+.programas .Software .desc_softwares:hover .Btn_descargar{
+ position: absolute;
+ top: 60%;
+ left: 60%;
+}
+
+.programas .Software .desc_softwares:hover img{
+ position: absolute;
+ top: -20%;
+}
+.programas .Software .desc_softwares:hover{
+    height: 95%;
+    position: absolute;
+    top: 60%;
+    transition: all ease 1.5s;
+}
+
+.programas .Software .desc_softwares:hover .p_hover{
+    display: block;
+    opacity: 1;
+    color: #fff;
+    position: absolute;
+    top: 22%;
+   
+
+}
+
+.programas .Software:hover  .img{
+    filter: blur(1px);
+    cursor: pointer;
+    transition: all ease 1.5s;
+}
+
+
+/*Boton de abrir y cerrrar sidebar */
+.menu .abrir{
+    width: 40px;
+    height: 40px;
+    background: rgb(209, 87, 5);
+    border-radius: 100%;
+    position: absolute;
+    top: 13%;
+    left: 70%;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+
+.menu .abrir i{
+    margin: 12px 12px; 
+    color: #fff;
+}
+
+
+.extent{
+    width: 20%;
+
+    z-index: 10;
+}
+
+.programas span{
+    font-family: 'Bungee Spice', cursive;
+    font-size: 25px; 
+    position: absolute;
+    
+    left: 10%;
+    margin: 1em;
+    z-index: 99;
+
+}
+
+
+/* Caja de Comentarios */
+
+.comments {
+    width: 80%;
+    height: 50%;
+    position: absolute;
+    top: 3500px;
+    left: 10%;
+    background: #181818;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.comments h2{
+    font-family: 'Bungee Spice', cursive;
+    padding: 2%;
+    display: block;
+}
+
+.comments input[type="text"]{
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    margin: 3%;
+    width: 400px;
+    height: 30px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.comments input[type="text"]:focus{
+    width: 450px;
+    border-bottom: 1px solid rgb(209, 87, 5);
+    transition: all ease 1.5s ;
+
+}
+
+.comments input[type="text"]::placeholder{
+    position: relative;
+    left: 50px;
+}
+
+.comments .comentario[type="text"]{
+   
+    position: absolute;
+    top: 50%;
+    left: .5%;
+}
+
+.comments input[type="submit"]{
+    width: 200px;
+    height: 40px;
+    border-radius: 2em;
+    background: rgb(209, 87, 5);
+    border: none;
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    cursor: pointer;
+}
+
+
+/*Imagen Frase*/
+.comments img{
+    width: 35%;
+    position: absolute;
+    left: 50%;
+    top: -2%;
+    margin: 5%;
+    border-radius: 10px;
+    
+}
+
+.comments img:hover{
+    filter: contrast(150%);
+    transition: all ease 1.5s;
+    cursor: pointer;
+}
+
+
+
+
+/*ENLACES*/
+.programas .Software button a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
